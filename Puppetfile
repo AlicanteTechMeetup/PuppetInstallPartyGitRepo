@@ -2,3 +2,4 @@
 mod 'puppetlabs/ntp', '3.0.3'
 mod 'puppetlabs/stdlib', '4.4.0'
 mod 'saz/timezone', '1.1.0'
+mod 'mthibaut/users', '1.0.11'

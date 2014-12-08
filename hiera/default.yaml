@@ -1,25 +1,19 @@
 ---
-classes:
- - 'profile::base'
-
 ntp::servers:
-  - 0.us.pool.ntp.org
   - 1.us.pool.ntp.org
-
-timezone::timezone:
-  - 'Europe/Madrid'
-
+  - 0.us.pool.ntp.org
+  
 users_users:
-    root:
+    user:
         ensure: present
-        uid: 0
-        gid: root
-        comment: root@%{::clientcert}
+        uid: 1000
+        comment: user at %{::clientcert}
         managehome: true
         shell: '/bin/bash'
         password: '*'
 #        ssh_authorized_keys:
-#            Clave_root_Juan:
+#            Clave_juan_Juan:
 #                ensure: present
 #                type: 'ssh-rsa'
 #                key: ''
+  
