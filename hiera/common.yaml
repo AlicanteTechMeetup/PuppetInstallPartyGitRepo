@@ -14,7 +14,7 @@ users_users:
         ensure: present
         uid: 0
         gid: root
-        comment: root@%{::clientcert}
+        comment: 'root@%{::clientcert}'
         managehome: true
         shell: '/bin/bash'
         password: '*'

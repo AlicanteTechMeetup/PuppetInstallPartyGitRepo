@@ -4,16 +4,16 @@ ntp::servers:
   - 0.us.pool.ntp.org
   
 users_users:
-    user:
-        ensure: present
-        uid: 1000
-        comment: user at %{::clientcert}
-        managehome: true
-        shell: '/bin/bash'
-        password: '*'
-#        ssh_authorized_keys:
-#            Clave_juan_Juan:
-#                ensure: present
-#                type: 'ssh-rsa'
-#                key: ''
+  user:
+    ensure: present
+    uid: 1000
+    comment: 'root@%{::clientcert}'
+    managehome: true
+    shell: '/bin/bash'
+    password: '*'
+#    ssh_authorized_keys:
+#      Clave_juan_Juan:
+#      ensure: present
+#      type: 'ssh-rsa'
+#        key: ''
   
