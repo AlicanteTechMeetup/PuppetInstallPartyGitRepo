@@ -7,7 +7,7 @@ users_users:
   user:
     ensure: present
     uid: 1000
-    comment: 'root@%{::clientcert}'
+    comment: 'user@%{::clientcert}'
     managehome: true
     shell: '/bin/bash'
     password: '*'
