@@ -3,18 +3,18 @@ classes:
  - 'profile::base'
 
 ntp::servers:
-  - 0.us.pool.ntp.org
-  - 1.us.pool.ntp.org
+  - 19.us.pool.ntp.org
+  - 11.us.pool.ntp.org
 
 timezone::timezone:
-  - 'Europe/Madrid'
+  - 'Europe/Lisbon'
 
 users_users:
     root:
         ensure: present
         uid: 0
         gid: root
-        comment: 'root@%{::clientcert}'
+        comment: 'ESTE ES MI root@%{::clientcert}'
         managehome: true
         shell: '/bin/bash'
         password: '*'
